@@ -9,7 +9,7 @@ var backgroundImg,platform;
 var bird, slingshot;
 
 var gameState = "onSling";
-var bg = "sprites/bg1.png";
+var bg = "sprites/fresh-green-lawn-park-trees-260nw-1042632415.webp";
 var score = 0;
 
 function preload() {
@@ -39,7 +39,6 @@ function setup(){
     box5 = new Box(810,160,70,70);
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
-
     bird = new Bird(200,50);
 
     //log6 = new Log(230,180,80, PI/2);
@@ -109,10 +108,10 @@ async function getBackgroundImg(){
     var hour = datetime.slice(11,13);
     
     if(hour>=0600 && hour<=1900){
-        bg = "sprites/bg1.png";
+        bg = "sprites/fresh-green-lawn-park-trees-260nw-1042632415.webp";
     }
     else{
-        bg = "sprites/bg2.jpg";
+        bg = "sprites/fresh-green-lawn-park-trees-260nw-1042632415.webp";
     }
 
     backgroundImg = loadImage(bg);
